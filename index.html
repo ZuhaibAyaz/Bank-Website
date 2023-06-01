@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking Website</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-color-primary text-color-white tracking-wider">
 
@@ -23,7 +24,7 @@
   <!-- list item -->
 
          <div>
-            <ul class="flex item-center space-x-6">
+            <ul class="hidden lg:flex item-center space-x-6">
                 <li><a href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
                 <li><a href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
                 <li><a href="#testimonial" class="hover:text-color-secondary ease-in duration-200">Testimonial</a></li>
@@ -34,11 +35,47 @@
                 <li> <button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">Free Trial</button></li>
             </ul>
          </div>
+ 
+         <!-- Mobile screen -->
+        
+         <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+            <i class="fa-solid fa-bars"></i>
+         </div>
+
+         <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+            <ul class="h-full grid place-items-center py-20">
+                <li><a id="hLink" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                <li><a id="hLink" href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
+                <li><a id="hLink" href="#testimonial" class="hover:text-color-secondary ease-in duration-200">Testimonial</a></li>
+                <li><a id="hLink" href="#pricing" class="hover:text-color-secondary ease-in duration-200">Pricing</a></li>
+                <li><a id="hLink" href="#blog" class="hover:text-color-secondary ease-in duration-200">Blog</a></li>
+                <li><a id="hLink" href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+
+                <li> <button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">Free Trial</button></li>
+           
+            </ul>
+         </div>
 
         </nav>
     </header>
 
+<!-- HOME SECTION -->
 
+
+    <script>
+       //Mobile Menu
+
+       const hamburger= document.querySelector('#hamburger');
+       const menu= document.querySelector('#menu');
+       const hLink= document.querySelector('#hLink');
+       const faSolid= document.querySelector('.fa-solid');
+
+       hamburger.addEventListener("click", () => {
+        menu.classList.toggle('hidden');
+        faSolid.classList.toggle('fa-xmark');
+    })
+    
+    </script>
 
 </body>
 </html>
