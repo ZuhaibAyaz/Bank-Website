@@ -20,3 +20,10 @@
 .user-pic.active-pic{
     border: 2px solid #ff7d3b
 }
+
+.user-text{
+    display: none;
+}
+.user-text.active-text{
+ display: block;
+}

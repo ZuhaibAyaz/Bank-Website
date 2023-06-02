@@ -658,6 +658,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .place-items-center {
   place-items: center;
 }
@@ -733,6 +737,10 @@ video {
 .bg-color-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(255 125 59 / var(--tw-bg-opacity));
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-4 {
@@ -891,6 +899,14 @@ video {
 
 .user-pic.active-pic{
   border: 2px solid #ff7d3b
+}
+
+.user-text{
+  display: none;
+}
+
+.user-text.active-text{
+  display: block;
 }
 
 .hover\:bg-color-primary-dark:hover {
