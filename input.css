@@ -17,3 +17,6 @@
 .title{
     @apply text-3xl font-bold md:text-4xl leading-snug mb-4;
 }
+.user-pic.active-pic{
+    border: 2px solid #ff7d3b
+}
