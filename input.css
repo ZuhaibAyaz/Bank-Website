@@ -13,3 +13,7 @@
 .blob2 {
     @apply w-80 h-80 bg-color-secondary absolute bottom-10 right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full;
 }
+
+.title{
+    @apply text-3xl font-bold md:text-4xl leading-snug mb-4;
+}
