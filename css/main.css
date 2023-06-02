@@ -570,8 +570,16 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-50 {
@@ -797,6 +805,10 @@ video {
 
 .border-t {
   border-top-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-solid {
