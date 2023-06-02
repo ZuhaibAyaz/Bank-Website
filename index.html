@@ -40,9 +40,9 @@
         
          <div id="hamburger" class="lg:hidden cursor-pointer z-50">
             <i class="fa-solid fa-bars"></i>
-         </div>
+        </div>
 
-         <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+        <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
             <ul class="h-full grid place-items-center py-20">
                 <li><a id="hLink" href="#home" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
                 <li><a id="hLink" href="#features" class="hover:text-color-secondary ease-in duration-200">Features</a></li>
@@ -51,10 +51,9 @@
                 <li><a id="hLink" href="#blog" class="hover:text-color-secondary ease-in duration-200">Blog</a></li>
                 <li><a id="hLink" href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
 
-                <li> <button class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200">Free Trial</button></li>
-           
+                <li><button class="btn">free trial</button></li>
             </ul>
-         </div>
+        </div>
 
         </nav>
     </header>
@@ -68,31 +67,56 @@
         <div class="blob2"></div>
 
         <div class="container py-20">
-            <div class="flex flex-col items-center z-20 md:flex-row">
+            <div class="flex flex-col items-center md:flex-row">
                 <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
-                    <h1 class="text-3xl font-bold md:text-4xl leading-snug">Awesome App for Your Financial.</h1>
+                    <h1 class="text-3xl font-bold md:text-4xl leading-snug mb-4">Awesome App for Your Financial.</h1>
                     <p class="leading-relaxed mb-10">This should be used to tell a story and let your users know a little more about app and it’s use, How can benefit them.</p>
                     <button class="btn">Download app</button>
                 </div>
 
-                <div >
-                    <imgsrc="./img/hero4.png" alt="">
+                <div class="md:w-1/2" >
+                    <img src="./img/hero4.png" alt="">
                 </div>
             </div>
         </div>
     </section>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script>
        //Mobile Menu
 
-       const hamburger= document.querySelector('#hamburger');
-       const menu= document.querySelector('#menu');
-       const hLink= document.querySelector('#hLink');
-       const faSolid= document.querySelector('.fa-solid');
+       const hamburger = document.querySelector('#hamburger');
+       const menu = document.querySelector('#menu');
+       const hLink = document.querySelectorAll('#hLink');
+       const faSolid = document.querySelector(".fa-solid");
 
        hamburger.addEventListener("click", () => {
         menu.classList.toggle('hidden');
         faSolid.classList.toggle('fa-xmark');
     })
+
+       hLink.forEach(link => {
+           link.addEventListener('click', () => {
+               menu.classList.toggle('hidden');
+               faSolid.classList.toggle('fa-xmark');
+           })
+       })
     
     </script>
 

@@ -566,8 +566,28 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .inset-0 {
   inset: 0px;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -592,6 +612,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .place-items-center {
@@ -621,19 +645,14 @@ video {
   background-color: rgb(1 5 30 / var(--tw-bg-opacity));
 }
 
-.bg-color-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 125 59 / var(--tw-bg-opacity));
-}
-
 .bg-color-primary-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(1 4 23 / var(--tw-bg-opacity));
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+.bg-color-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 125 59 / var(--tw-bg-opacity));
 }
 
 .px-9 {
@@ -641,14 +660,23 @@ video {
   padding-right: 2.25rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-3xl {
@@ -664,18 +692,26 @@ video {
   text-transform: capitalize;
 }
 
-.tracking-wider {
-  letter-spacing: 0.05em;
+.leading-relaxed {
+  line-height: 1.625;
 }
 
-.text-color-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.leading-snug {
+  line-height: 1.375;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-color-secondary {
   --tw-text-opacity: 1;
   color: rgb(255 125 59 / var(--tw-text-opacity));
+}
+
+.text-color-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .duration-200 {
@@ -693,6 +729,29 @@ video {
 
 .hover\:opacity-80:hover {
   opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:pr-10 {
+    padding-right: 2.5rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
